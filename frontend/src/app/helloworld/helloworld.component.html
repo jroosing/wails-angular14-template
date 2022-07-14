@@ -1,0 +1,15 @@
+<main fxLayoutAlign="center center" fxLayout="column">
+  <form [formGroup]="greetForm" (ngSubmit)="onSubmit()" fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="16px">
+    <mat-form-field fxFlex="1 1 250px">
+      <mat-label>Please enter your name below 👇</mat-label>
+      <input matInput formControlName="name" required>
+      <mat-error *ngIf="name?.invalid">
+        This field is mandatory
+      </mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" fxFlex="1 1 auto">Greet</button>
+  </form>
+  <div>
+    {{ resultText }}
+  </div>
+</main>
