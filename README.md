@@ -23,6 +23,8 @@ To generate a new project using this template run the following command:
 
 ## Live Development
 
+Before starting your development, run `wails build`, such that a dist folder is generated.
+
 To run in live development mode, run `wails dev` in the project directory. In another terminal, go into the `frontend`
 directory and run `npm run dev`. The frontend dev server will run on http://localhost:34115. Connect to this in your
 browser and connect to your application.
